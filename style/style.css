@@ -1,0 +1,233 @@
+:root {
+    /* Backgrounds */
+    --dark : #060102;
+    --box-media : linear-gradient(145deg, #E2E8EC 0%, #FFFFFF 100%);
+    
+
+
+    /* Colors */
+    --subtitle-color: #C4CFDE;
+    --title-color: hsla(0, 0%, 100%, 1);
+    --title-color-span: hsla(342, 100%, 50%, 1);
+    --description-color:hsla(215, 28%, 82%, 0.9);
+
+    /* Family fonts */
+    --montserrat: 'Montserrat', sans-serif;
+    --poppins:'Poppins', sans-serif;
+
+    /* Fonts */
+    --subtitle-font: 1.2rem;
+    --title-font: 4rem;
+    --description-font: 1.4rem;
+    --title-two-font :3.5rem;
+
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-image: url(../assets/photographer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 16px;
+}
+
+.subtitle{
+    color:var(--subtitle-color);
+    font-size: 1.2rem;
+    font-family: var(--montserrat);
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.title{
+    color: var(--title-color);
+    font-family: var(--montserrat);
+    text-transform: capitalize;
+    font-size: 4rem;
+    max-width: 600px;
+}
+.title span{
+    color: var(--title-color-span);
+}
+.title-two{
+    color: var(--title-color);
+    font-family: var(--montserrat);
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+
+.description{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--description-color);
+    font-family: var(--poppins);
+    max-width: 514px;
+}
+
+.social-media-container{
+    display: flex;
+    column-gap: 28px;
+
+}
+
+.box-icon{
+    width: 60px;
+    height: 60px;
+    background: var(--box-media);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pantallas pequeñas como teléfonos móviles */
+@media (min-width: 480px) {
+    .hero{
+        padding: 0 32px;
+    }
+
+    .subtitle{
+        font-size: 1.2rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    .title{
+        text-transform: capitalize;
+        font-size: 4.2rem;
+        max-width: 600px;
+    }
+
+    .title-two{
+        text-transform: capitalize;
+        font-size: 3.8rem;
+    }
+    
+    .description{
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-width: 514px;
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width:1023px) {
+    .hero{
+        padding: 0 68px;
+    }
+
+    .subtitle{
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    .title{
+        text-transform: capitalize;
+        font-size: 5.4rem;
+        max-width: 600px;
+    }
+
+    .title-two{
+        text-transform: capitalize;
+        font-size: 4.8rem;
+    }
+    
+    .description{
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-width: 514px;
+    }
+}
+
+/* Pantallas grandes como computadoras de escritorio */
+@media (min-width: 1420px) {
+    .hero{
+        padding: 0 112px;
+    }
+    .subtitle{
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    .title{
+        text-transform: capitalize;
+        font-size: 4.8rem;
+        max-width: 600px;
+    }
+
+    .title-two{
+        text-transform: capitalize;
+        font-size: 4.6rem;
+    }
+    
+    .description{
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-width: 514px;
+    }
+}
+
+
+
